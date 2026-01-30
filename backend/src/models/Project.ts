@@ -82,6 +82,5 @@ const projectSchema = new Schema<IProject>(
 
 // Index for common queries
 projectSchema.index({ createdBy: 1, isDeleted: 1 });
-projectSchema.index({ deletedAt: 1 });
 
 export const Project = model<IProject>("Project", projectSchema);

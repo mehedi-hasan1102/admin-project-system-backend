@@ -88,6 +88,5 @@ const taskSchema = new Schema<ITask>(
 // Indexes for common queries
 taskSchema.index({ projectId: 1, status: 1 });
 taskSchema.index({ assignedTo: 1 });
-taskSchema.index({ deletedAt: 1 });
 
 export const Task = model<ITask>("Task", taskSchema);

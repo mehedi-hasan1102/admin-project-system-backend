@@ -76,7 +76,4 @@ const userSchema = new Schema<IUser>(
   { timestamps: true }
 );
 
-// Index for email lookups
-userSchema.index({ email: 1 });
-
 export const User = model<IUser>("User", userSchema);
